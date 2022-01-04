@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container generale w-50 mx-auto bg-dark text-light pb-5">
+        <h1 class="text-center bg-primary p-4 w-50 mx-auto mb-5" >Quizz culture générale</h1>
+
+        <div class="container">
+            <form class="formQuizz">
+                <div class="questionBlock my-4">
+                    <h4>Quelle est la capitale de la Belgique ?</h4>
+                    <div>
+                        <input type="radio" id="Bruxelles" name="q1" value="a" checked>
+                        <label for="Bruxelles">Bruxelles</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Paris" name="q1" value="b">
+                        <label for="Paris">Paris</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Berlin" name="q1" value="c">
+                        <label for="Berlin">Berlin</label>
+                    </div>
+                </div>
+                <div class="questionBlock my-4">
+                    <h4>Dans l'équation "y = 2x - 12" quelle est la valeur de x ?</h4>
+                    <div>
+                        <input type="radio" id="5" name="q2" value="a" checked>
+                        <label for="5">5</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="6" name="q2" value="b">
+                        <label for="6">6</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="7" name="q2" value="c">
+                        <label for="7">7</label>
+                    </div>
+                </div>
+                <div class="questionBlock my-4">
+                    <h4>Un des rôles de l'iléon est ?</h4>
+                    <div>
+                        <input type="radio" id="Digestion" name="q3" value="a" checked>
+                        <label for="Digestion">Digestions des graisses</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Excretion" name="q3" value="b">
+                        <label for="Excretion">Excrétion des toxines</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Absorption" name="q3" value="c">
+                        <label for="Absorption">Absorption des nutriments</label>
+                    </div>
+                </div>
+                <div class="questionBlock my-4">
+                    <h4>Quelle est l'année de naissance de Bruce Lee ?</h4>
+                    <div>
+                        <input type="radio" id="1960" name="q4" value="a" checked>
+                        <label for="1960">1960</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1940" name="q4" value="b">
+                        <label for="1940">1940</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="1950" name="q4" value="c">
+                        <label for="1950">1950</label>
+                    </div>
+                </div>
+                <div class="questionBlock my-4">
+                    <h4>Qui a écrit l'oeuvre "Ainsi parlait Zarathoustra" ?</h4>
+                    <div>
+                        <input type="radio" id="Nietzsche" name="q5" value="a" checked>
+                        <label for="Nietzsche">Friedrich Nietzsche</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Eric" name="q5" value="b">
+                        <label for="Eric">Eric Zemour</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Rambo" name="q5" value="c">
+                        <label for="Rambo">John Rambo</label>
+                    </div>
+                </div>
+                <div class="w-50 mx-auto text-center">
+                    <button class="submit m-3 rounded-pill p-3 fs-4">Veuillez valider vos réponses</button>
+                </div>
+            </form>
+            <div class="resultats text-center">
+                <h2>Cliquez sur valider pour voir les résultats</h2>
+                <p class="aide"></p>
+                <p class="note"></p>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
