@@ -38,6 +38,7 @@ form.addEventListener('submit', (e) => {
     }
     console.log(verifTableau);
     afficherResultats(verifTableau);
+    couleursFonction(verifTableau);
     verifTableau = []; //vider tableau après chaque utilisation
 }
 
@@ -82,13 +83,32 @@ function afficherResultats(tabCheck) {
 
         default:
             'Wops, cas innatendu.';
-
     }
-
 }
 
+// fonction pour changer la couleur des bloques de questions en fonction de si c'est vrai(vert) ou faux(rose/rouge)
+function couleursFonction(tabValBool){
+    for ( j = 0; j < tabValBool.length; j++){
+        if (tabValBool[j] === true) {
+            toutesLesQuestions[j].style.background = "lightgreen";
+        }
+        else{
+            toutesLesQuestions[j].style.background = '#ffb8b8';
+            toutesLesQuestions[j].classList.add('echec');
 
+            setTimeout(() => {
+                toutesLesQuestions[j].classList.remove('echec');
+            }, 500)
+        }
+    }
+}
 
+// événement sur le bloque de question avec un for each pour remettre le fond noir quand on clique dessus
+toutesLesQuestions.forEach(e => {
+    e.addEventListener("click", () => {
+        e.style.background = "black"
+    })
+})
 
 
 
